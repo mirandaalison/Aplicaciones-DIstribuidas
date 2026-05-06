@@ -6,7 +6,8 @@ module.exports = httpServer => {
     io.on("connection", socket => {
         //le voy a pasar cada conexión, cada socket que se habilite
         //muestro en la terminarl el socet de cada usuario que se agrega, como un chat de wpp
-        console.log(socket.id);
+        console.log(socket.id); //un socket es un enlace de comunicación y cada user que se conecta tiene un socket habilitado
+        
     })
 
 }

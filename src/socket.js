@@ -7,7 +7,7 @@ const express = require('express');
 const {createServer} = require('http');
 const realTimeServer = require("./realTimeServer"); //importo el servidor de tiempo real, lo que hace es exportar la conexion hacia el servidor
 //tengo la ruta donde va a estar la sincronizacion de lso archivos
-const path = ('path');
+const path = require('path');
 
 //neceito un lugar donde hacer las pteciones
 const app = express();
