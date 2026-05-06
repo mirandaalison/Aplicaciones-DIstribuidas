@@ -13,4 +13,20 @@ router.get("/", (req, res) => {
     res.sendFile(views + "/socket.html"); //le digo que me envie el index.html, y lo busque en la ruta de las vistas
 });
 
+router.get("/register", (req, res) => {
+    res.sendFile(views + "/register.html"); 
+});
+
+
 module.exports = router; //exporto el router para que pueda ser usado en el socket.js
+
+
+
+//DOM se estrcutura en funcion al html
+//document objetct models
+//el modelo es la etsructura del html
+//objetos son etiquetas html y tiene metoods y atrbutos un objeto
+//el domnet es el archivo
+//dom es estrctura de etiquetas html que vasn a ser manipuladas por js
+//evento = acció que quiero relaizar
+//
