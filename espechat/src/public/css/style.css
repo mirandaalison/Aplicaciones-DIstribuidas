@@ -1,0 +1,178 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+  min-height: 100vh;
+}
+
+header {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: #ffffff;
+  padding: 20px;
+  font-weight: 700;
+  font-size: 2rem;
+  box-shadow: 0 10px 30px rgba(102, 126, 234, 0.2);
+  letter-spacing: 1px;
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.header-content h1 {
+  flex: 1;
+  text-align: center;
+}
+
+.btn-logout {
+  padding: 8px 20px;
+  background-color: rgba(255, 255, 255, 0.2);
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 13px;
+  border: 2px solid rgba(255, 255, 255, 0.4);
+  border-radius: 20px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.btn-logout:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+  border-color: rgba(255, 255, 255, 0.7);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.btn-logout:active {
+  transform: translateY(0);
+}
+
+
+.button-container {
+  display: flex;
+  justify-content: center;
+}
+
+[type="button"]:not(:disabled),
+[type="reset"]:not(:disabled),
+[type="submit"]:not(:disabled),
+button:not(:disabled) {
+  cursor: pointer;
+}
+
+.btn {
+  padding: 0.5rem 1.25rem;
+  font-size: 1rem;
+  font-weight: 600;
+  text-align: center;
+  text-decoration: none;
+  border: none;
+  border-radius: 8px;
+  transition:
+    all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  color: var(--btn-color);
+  background-color: var(--btn-bg);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.btn:hover {
+  color: var(--btn-hover-color);
+  background-color: var(--btn-hover-bg);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.btn:focus {
+  color: var(--btn-hover-color);
+  background-color: var(--btn-hover-bg);
+  outline: 0;
+  box-shadow: 0 0 0 4px rgba(var(--btn-focus-shadow-rgb), 0.2);
+}
+
+.btn:active {
+  color: var(--btn-active-color);
+  background-color: var(--btn-active-bg);
+  transform: translateY(0);
+}
+
+.primary {
+  --btn-color: #764ba2;
+  --btn-bg: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  --btn-border-color: transparent;
+  --btn-hover-color: #764ba2;
+  --btn-hover-bg: linear-gradient(135deg, #764ba2 0%, #667eea 100%);
+  --btn-hover-border-color: transparent;
+  --btn-focus-shadow-rgb: 102, 126, 234;
+  --btn-active-color: #764ba2;
+  --btn-active-bg: linear-gradient(135deg, #5568d3 0%, #664296 100%);
+  --btn-active-border-color: transparent;
+  --btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.2);
+  --btn-disabled-color: #ffffff;
+  --btn-disabled-bg: #cccccc;
+  --btn-disabled-border-color: #cccccc;
+}
+
+.secondary {
+  --btn-color: #ffffff;
+  --btn-bg: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+  --btn-border-color: transparent;
+  --btn-hover-color: #ffffff;
+  --btn-hover-bg: linear-gradient(135deg, #f5576c 0%, #f093fb 100%);
+  --btn-hover-border-color: transparent;
+  --btn-focus-shadow-rgb: 245, 87, 108;
+  --btn-active-color: #ffffff;
+  --btn-active-bg: linear-gradient(135deg, #e73e56 0%, #e07fb0 100%);
+  --btn-active-border-color: transparent;
+  --btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.2);
+  --btn-disabled-color: #ffffff;
+  --btn-disabled-bg: #cccccc;
+  --btn-disabled-border-color: #cccccc;
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+}
+
+input {
+  border: 1px solid #006633; /* Verde institucional */
+  outline: none;
+  padding: 10px;
+  border-radius: 3px;
+}
+
+.card {
+  box-shadow:
+    0 0 4px 0 rgb(0 0 0 / 8%),
+    0 2px 4px 0 rgb(0 0 0 / 12%);
+  border-radius: 3px;
+  background: #ffffff; /* Fondo blanco institucional */
+  border: 1px solid #006633; /* Borde verde */
+}
+
+.image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image-container img {
+  display: inline-block;
+  width: 100%;
+  border: 2px solid #ffd700; /* Marco amarillo institucional */
+  border-radius: 4px;
+}

@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/register.css" />
+    <title>Registrate</title>
+  </head>
+  <body>
+    <header>
+      <h1>ESPEChat</h1>
+    </header>
+    <main>
+      <form action="#" method="post" class="card" id="form">
+        <div class="input-group">
+          <label for="username">Ingresa tu nombre de usuario</label>
+          <input type="text" id="username" />
+        </div>
+        
+        <div class="input-group">
+          <label for="profile-photo">Sube tu foto de perfil</label>
+          <div class="photo-upload-container">
+            <input type="file" id="profile-photo" accept="image/*" />
+            <div id="photo-preview" class="photo-preview">
+              <img id="preview-img" alt="Vista previa de foto" />
+              <span id="preview-text">Selecciona una foto</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="button-container">
+          <button type="button" class="btn primary" id="go-to-chat-btn">
+            Ir al Chat
+          </button>
+        </div>
+      </form>
+    </main>
+    <script src="js/register.js"></script>
+  </body>
+</html>
